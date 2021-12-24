@@ -10,6 +10,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Response
 
 class MenuViewModel(private val menuReposirory: MenuRepository):ViewModel(){
+
     private val mutableState = MutableLiveData<MenuResponse>()
     fun state() : LiveData<MenuResponse> = mutableState
     fun getMenu() {
@@ -32,4 +33,5 @@ class MenuViewModel(private val menuReposirory: MenuRepository):ViewModel(){
             mutableState.postValue(safebody)
         }
     }
+
 }

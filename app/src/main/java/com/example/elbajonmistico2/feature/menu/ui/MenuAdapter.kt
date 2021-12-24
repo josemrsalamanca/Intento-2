@@ -9,7 +9,7 @@ import com.example.elbajonmistico2.feature.menu.data.modelo.Products
 class MenuAdapter(private val products: List<Products>): RecyclerView.Adapter<MenuViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
         val binding = ItemListBinding.inflate(LayoutInflater.from(parent.context),parent,false)
-        return MenuViewHolder(binding    )
+        return MenuViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
