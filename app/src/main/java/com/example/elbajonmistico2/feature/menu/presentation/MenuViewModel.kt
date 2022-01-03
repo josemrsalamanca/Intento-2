@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.elbajonmistico2.feature.ChekListItem
 import com.example.elbajonmistico2.feature.menu.data.MenuRepository
 import com.example.elbajonmistico2.feature.menu.data.remote.MenuResponse
 import kotlinx.coroutines.launch
@@ -33,5 +34,6 @@ class MenuViewModel(private val menuReposirory: MenuRepository):ViewModel(){
             mutableState.postValue(safebody)
         }
     }
+
 
 }
